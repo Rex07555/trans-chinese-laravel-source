@@ -1,0 +1,14 @@
+<?php
+/**
+ * 路由，存根文件
+ */
+
+namespace DummyNamespace;
+
+use DummyRootNamespaceHttp\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class DummyClass extends Controller
+{
+    //
+}

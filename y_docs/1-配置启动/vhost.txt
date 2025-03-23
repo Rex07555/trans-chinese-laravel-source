@@ -1,0 +1,18 @@
+
+#9061 xx-lar-trans	2025.03.23
+server {
+        listen       9061;
+        server_name  www.dev.net;
+		index  index.html index.htm index.php;
+		root   E:/www/w_gpa/w_xx/trans-chinese-laravel-source/master/v1.0_6.20/public;
+		
+        location / {
+			try_files $uri $uri/ /index.php?$query_string;
+        }
+        location ~ \.php$ {
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+            include        fastcgi_params;
+        }
+}

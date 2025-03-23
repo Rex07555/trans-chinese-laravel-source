@@ -1,0 +1,22 @@
+<?php
+/**
+ * 基础，虚拟类根文件
+ */
+
+namespace DummyNamespace;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class DummyClass extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function toArray($request)
+    {
+        return parent::toArray($request);
+    }
+}

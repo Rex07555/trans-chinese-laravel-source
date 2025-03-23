@@ -1,0 +1,19 @@
+<?php
+/**
+ * 数据库，存根文件
+ */
+
+use Illuminate\Database\Seeder;
+
+class DummyClass extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //
+    }
+}
